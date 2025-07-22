@@ -5,10 +5,14 @@ This repo simplifies writing Secure Dynamic Messaging (SDM) payloads to **NTAG42
 ## What It Does
 
 * **Option 1:**
-  Generates an **NDEF payload** containing an **encrypted UID + counter (PICCDATA)** and a **CMAC**, ensuring each URL read from the tag is unique and secured.
+  **Generate an NDEF payload with Secure Dynamic Messaging (SDM)** and write it to your tag. You can choose between:
+
+  * **Encrypted SDM:** Adds encrypted **PICC Data** (UID + counter) and a **CMAC** inside your URL, securing each scan with a unique result.
+
+  * **Unencrypted SDM:** Adds unencrypted **UID**, **counter**, and **CMAC** directly into your URL — easier to debug but less secure.
 
 * **Option 2:**
-  Generates an **NDEF payload** with **unencrypted UID + counter + CMAC** inside the URL — less secure, but easier to debug and integrate.
+  **Change a key on your NTAG424 tag.** This helps secure your tag by updating one of its keys to a new value.
 
 > **Important:** This script only prepares the NTAG424 tags. You’ll need to handle your website/backend/VPS separately to process and validate incoming dynamic URLs.
 
