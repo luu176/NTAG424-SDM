@@ -51,5 +51,11 @@ Because not everyone wants to spend days buried in datasheets to do something si
 Sit back, tag on reader, run the script, and let it handle the work for you.
 
 
+
+
+
+
+
+
 this readme was written using the help of AI.
 
